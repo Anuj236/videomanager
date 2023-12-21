@@ -9,7 +9,7 @@ import { app } from "./app.js";
 
 dotenv.config(
     {
-        path:"./env"
+        path:"./.env"
     }
 );
  // Asynchronous function returns Promise
