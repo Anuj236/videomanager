@@ -19,14 +19,14 @@ cloudinary.config({
             resource_type: "auto",
         });
 
-        console.log("File is uploaded", response.url);
+        //console.log("File is uploaded", response.url);
         fs.unlinkSync(localFilePath);
         return response;
     } catch (error) {
-        console.error("Error uploading file to Cloudinary:", error.message);
+        //console.error("Error uploading file to Cloudinary:", error.message);
 
         // Optionally log the entire error object for more details
-        console.error("Full error details:", error);
+        //console.error("Full error details:", error);
 
         // Remove locally saved temporary file as the file upload operation failed
         fs.unlinkSync(localFilePath);
